@@ -13,4 +13,4 @@ const userSchema = new mongoose.Schema({
     enum: ["client","admin"],
   },
 });4
-module.exports = User = mongoose.model("user", userSchema);+99999999999
+module.exports = User = mongoose.model("user", userSchema);

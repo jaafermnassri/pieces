@@ -4,7 +4,7 @@ const User = require("../models/User");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const isAuth = require("../middleware/isAuth");
-const { deleteUser, UpdateUser, getUser, getAllUsers, Login, Register } = require("../controllers/Users");
+const { deleteUser, UpdateUser, getUser, current,getAllUsers, Login, Register } = require("../controllers/Users");
 
 //register
 router.post("/register",Register);
@@ -12,9 +12,7 @@ router.post("/register",Register);
 router.post("/login", Login);
 
 //get current user
-router.get("/current", isAuth(), async (req, res) => {
-  res.send(req.user);
-});
+router.get("/current", isAuth(),current);
 
 //get all users
 router.get("/", getAllUsers);

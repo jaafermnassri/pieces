@@ -37,6 +37,10 @@ const Login = async (req,res)=> {
         console.log(error.message)
     }
 }
+const current = async(req,res)=> {
+  res.send(req.user);
+}
+
 const getAllUsers = async (req, res) => {
     try {
       const users = await User.find({});
@@ -75,4 +79,4 @@ const getUser = async (req, res) => {
     }
   };
   
-  module.exports = { UpdateUser, deleteUser, getUser,Register,Login,getAllUsers };
+  module.exports = { UpdateUser,current, deleteUser, getUser,Register,Login,getAllUsers };

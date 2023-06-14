@@ -3,10 +3,13 @@ const Piece = require('../models/Piece')
 
 const AddPiece = async(req,res)=> {
     const url = `${req.protocol}://${req.get("host")}`;
+    console.log("fichier", req.file);
+    console.log(req.body)
+    console.log(req.user)
         try {
             const newPiece = new Piece({...req.body,user: req.user._id});
-            // newPiece.file = `${url}/${req.file.path}`;
-            
+            newPiece.fichier = `${url}/${req.file.path}`;
+           
             await newPiece.save();
             res.send(newPiece);
         } catch (error) {
@@ -52,7 +55,7 @@ const updatePiece = async(req,res)=>{
 
 const getOnePiece = async(req,res)=>{
     try {
-        const findOnePiece = await Piece.findOne({ _id: req.params.id });
+        const findOnePiece = await Piece.findOne({ _id: req.params.idPiece });
         res.send(findOnePiece);
       } catch (error) {
         res.status(400).send(error.message);
