@@ -1,0 +1,15 @@
+.cnx {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 60%;
+    font-size: 1rem;
+}
+.colcnx {
+    width: 50%;
+    align-items: center;
+    height: 60%;
+    display: flex;
+}

@@ -1,0 +1,20 @@
+.pimage {
+    width: 180px;
+      border-radius: 20%;
+      margin-bottom: 5%;
+  }
+  .table {
+    height: 65%;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  .taswira {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .pdet {
+    height: 70%;
+  margin: 10% auto;
+  width: 80%;
+  }

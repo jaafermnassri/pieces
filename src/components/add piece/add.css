@@ -1,0 +1,41 @@
+.b62m3t {
+  padding: 1em;
+  margin: 7%;
+}
+.choices {
+  display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 65%;
+    font-size: 1.8rem;
+    color: black;
+}
+.vl {
+  border-left: 2px solid rgb(43, 44, 53);
+  height: 70%;
+  position: absolute;
+  left: 50%;
+  margin-top: 10%;
+  margin-left: -3px;
+  top: 0;
+}
+.secando {
+  height: 70%;
+  margin-left: 13%;
+  width: 45%;
+}
+.pimage {
+  width: 180px;
+    border-radius: 20%;
+    margin-bottom: 5%;
+}
+.table {
+  height: 65%;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+.taswira {
+  margin: 0 auto;
+  text-align: center;
+}
